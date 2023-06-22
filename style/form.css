@@ -1,0 +1,21 @@
+.post {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(153, 255, 102, 0.55);
+    padding: 7px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.post__spacer {
+    height: 1px;
+    margin: 0 10px;
+    flex-grow: 1;
+    background-color: black;
+}
+@media only screen and (max-width: 600px){
+    .post {
+        flex-direction: column-reverse;
+    }
+}

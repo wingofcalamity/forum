@@ -1,0 +1,38 @@
+#mb_id {
+    width: 5ch;
+    text-align: center;
+    font-weight: bold;
+}
+#mb_main {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#mb_content {
+    display:flex;
+}
+.thread__content {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+.message__reply {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+.message__reply--author {
+    font-weight: 700;
+}
+
+.thread__header {
+    display: flex;
+    justify-content: space-between;
+}
+.thread__id {
+    font-size: 16px;
+}

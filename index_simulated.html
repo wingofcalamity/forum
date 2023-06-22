@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<BASE href="forum">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Messageboard</title>
+	<link rel="stylesheet" href="./style/default.css?1680094350">
+    <link rel="stylesheet" href="./style/form.css?1680094350">
+</head>
+<body>
+<main>
+    <div id="navspacer"><!--spacer--></div>
+    <section id="mb_main" class="wrapper">
+        <h2>Message Board</h2>
+        <form method="post" id="create_post">
+            <p>Name (Optional)</p>	
+            <textarea type="text" name="msg_un" id="msg_un" rows="1"></textarea>
+            <p>Titel<span class="red">*</span></p>
+            <textarea type="text" name="msg_cnt" required="required" id="msg_cnt" rows="1"></textarea>
+            <p>Nachricht<span class="red">*</span></p>
+            <textarea name="msg_txt" required="required" id="msg_txt" rows="3"></textarea>
+            <br>
+            <button id="btn_mb">Post</button>
+            <p id="output">&nbsp;</p>
+        </form>        
+        <div id="messageboard"> 
+            <div class="id_content">
+                <article class="post">
+	                <div class="post__topic">
+		                <a class="msg_id" href="./thread/1">
+			                &gt1 - General Thread
+                        </a>
+		            </div>
+	                <div class="post__spacer"></div>
+	                <div class="post__author">
+		                Anon(<span class="uuid">eeeb6b</span>)@2023-03-29 00:57:07
+	                </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p id="copyright">©2023</p>
+</footer>
+</body>
+</html>
